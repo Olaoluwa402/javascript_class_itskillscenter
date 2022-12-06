@@ -1,5 +1,60 @@
 const { log } = console;
 
+const result = document.getElementById("result");
+const btn = document.getElementById("submit");
+
+log(btn);
+
+btn.addEventListener("click", function () {
+  const input = document.getElementById("day").value;
+  const day = input.toLowerCase();
+  log("here");
+  log(input);
+  switch (day) {
+    case "monday":
+      // alert("Yes, it is monday");
+      result.innerHTML = `<p class=''>Yes, it is a ${input}</>`;
+      document.getElementById("day").value = "";
+      break;
+    case "tuesday":
+      result.innerHTML = `<p class=''>Yes, it is a ${input}</>`;
+      document.getElementById("day").value = "";
+      break;
+    case "wednesday":
+      result.innerHTML = `<p class=''>Yes, it is a ${input}</>`;
+      document.getElementById("day").value = "";
+      break;
+    case "thursday":
+      result.innerHTML = `<p class=''>Yes, it is a ${input}</>`;
+      document.getElementById("day").value = "";
+      break;
+    case "friday":
+      result.innerHTML = `<p class=''>Yes, it is a ${input}</>`;
+      document.getElementById("day").value = "";
+      break;
+    case "saturday":
+      result.innerHTML = `<p class=''>Yes, it is a ${input}</>`;
+      document.getElementById("day").value = "";
+      break;
+    case "sunday":
+      result.innerHTML = `<p class=''>Yes, it is a ${input}</>`;
+      document.getElementById("day").value = "";
+      break;
+    default:
+      result.innerHTML = `<p class=''>Not a week day</>`;
+      document.getElementById("day").value = "";
+  }
+});
+
+let xyz = 70;
+const res =
+  xyz && xyz >= 10 && xyz < 18
+    ? "Not Eligible to vote"
+    : xyz && xyz >= 18 && xyz <= 60
+    ? "Eligible to vote"
+    : "You are too old";
+log(res);
+
 //if
 // const user = await User.find();
 // let age = 15;

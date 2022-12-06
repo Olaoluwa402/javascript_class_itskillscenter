@@ -20,15 +20,21 @@
     </script>
   </head>
   <body>
-    <div class="w-full h-[200px] bg-red-900 drop-shadow-md flex">
-      <div class="basis-1/2 h-16 text-white">hjgjhghjgjh</div>
-      <div class="basis-1/2 h-16 text-white">uigigiugiu</div>
+    <div
+      class="w-full h-screen bg-red-900 drop-shadow-md flex flex-col items-center justify-center"
+    >
+      <div class="w-[240px] max-h-fit bg-white drop-shadow-md p-4 rounded-lg">
+        <input type="text" placeholder="Enter week day" id="day" />
+        <button
+          id="submit"
+          class="w-full btn px-[10px] py-[5px] bg-slate-400 rounded-lg text-white mt-4 hover:opacity-60"
+        >
+          Click me
+        </button>
+      </div>
+
+      <div id="result" class="bg-green-300"></div>
     </div>
-    <h2 id="header">Learn Javascript</h2>
-    <button class="btn">Click me</button>
-    <button class="btn">Click me</button>
-    <button class="btn">Click me</button>
-    <button class="btn">Click me</button>
 
     <script type="module" src="./js/main.js"></script>
   </body>
