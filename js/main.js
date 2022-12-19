@@ -4,7 +4,7 @@ const result = document.getElementById("result");
 const btn = document.getElementById("submit");
 
 log(btn);
-
+console.log(window.windowScoped, "fromm arryaMethod");
 btn.addEventListener("click", function () {
   const input = document.getElementById("day").value;
   const day = input.toLowerCase();
@@ -46,7 +46,12 @@ btn.addEventListener("click", function () {
   }
 });
 
-let xyz = 70;
+const xyz = 70;
+const gc = 400;
+const abc = 100;
+export { gc, xyz };
+export default abc;
+
 const res =
   xyz && xyz >= 10 && xyz < 18
     ? "Not Eligible to vote"
