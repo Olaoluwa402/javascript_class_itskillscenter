@@ -38,3 +38,13 @@ log(getAp, "hasMap");
 const user = {
   name: "john",
 };
+
+const listt = [
+  { id: 4, name: "john" },
+  { id: 1, name: "Dayo" },
+  { id: 6, name: "Bayo" },
+  { id: 5, name: "Chima" },
+];
+
+const result = listt.sort();
+console.log(result);
